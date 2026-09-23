@@ -12,7 +12,7 @@ def mean_median_mode(x: list) -> dict:
     values,counts=np.unique(x,return_counts=True)
     mode=values[np.argmax(counts)]
     return {
-        "mean": float(np.mean(x)),
-        "median": float(np.median(x)),
+        "mean": float(mean),
+        "median": float(median),
         "mode": float(mode),
     }
